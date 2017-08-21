@@ -159,6 +159,12 @@ aside#about_sidebar {
 	background-color:rgb(4, 22, 46);
 }
 
+/* testing a better solution to img resizing*/
+
+.img_bkgrd img {
+	max-width: 80%;
+}
+
 .img_bkgrd h3 {
 	font-size: 20px;
 	text-align: center;
@@ -170,7 +176,7 @@ aside#about_sidebar {
 }
 
 #cat_img {
-	width: 350px;
+	/*width: 350px;*/
 	display:block;
 	margin: 0 auto;
 }
@@ -284,7 +290,7 @@ footer p {
 	}
 
 	#main_img p {
-		padding-top: 400px;
+		padding-top: 470px;
 	}
 
 	aside#hobby_sidebar {
