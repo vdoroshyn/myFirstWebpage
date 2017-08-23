@@ -4,6 +4,7 @@
 	margin:auto;
 	width:80%;
 	overflow:hidden;
+	height: auto;
 /*	border:3px solid purple;*/
 }
 
@@ -13,6 +14,7 @@
 	padding-right: 20px;
 	border-radius: 7px;
 	width: 45%;
+	height: 35px;
 }
 
 .dark {
@@ -45,6 +47,7 @@ header {
 #logo {
 	float:left;
 	margin: 20px 15px;
+	margin-top: 13px;
 	font-size: 20px;
 	color:rgb(78, 202, 255);
 	padding-left: 20px;
@@ -75,6 +78,11 @@ header a:hover {
 	color:orange;
 }
 
+header h1 {
+	font-family: cursive, Arial;
+	font-size: 37px;
+}
+
 /*main img*/
 
 #main_img {
@@ -87,10 +95,12 @@ header a:hover {
 #main_img h1 {
 	font-size: 34px;
 	padding-top: 5px;
+	font-family: 'Lobster Two', cursive;
 }
 
 #main_img p {
 	font-size: 20px;
+	font-family: 'Berkshire Swash', cursive;
 }
 
 /*boxes*/
@@ -112,7 +122,24 @@ header a:hover {
 }
 
 #boxes .box h3 {
-	font-size: 20px;
+	font-size: 30px;
+	font-family: 'Amatic SC', cursive;
+}
+
+.box #bear {
+	padding-top: 25px;
+}
+
+.box #fly {
+	padding-top: 15px;
+}
+
+.toUpperBear {
+	margin-top: -25px;
+}
+
+.toUpperFly {
+	margin-top: -15px;
 }
 
 /* about page */
@@ -168,6 +195,7 @@ aside#about_sidebar {
 .img_bkgrd h3 {
 	font-size: 20px;
 	text-align: center;
+	font-family: 'Berkshire Swash', cursive;
 }
 
 .page_title {
@@ -183,6 +211,10 @@ aside#about_sidebar {
 
 article#main_col p {
 	padding-top: 10px;
+}
+
+article#main_col h1 {
+	font-family: 'Lobster Two', cursive;
 }
 
 aside#about_sidebar h3 {
@@ -220,6 +252,7 @@ aside#hobby_sidebar div h3 {
 	font-weight:bold;
 	text-align: center;
 	font-size: 26px;
+	font-family: 'Berkshire Swash', cursive;
 }
 
 aside#hobby_sidebar input {
@@ -244,15 +277,25 @@ textarea {
 
 footer {
 	background-color:rgb(4, 22, 46);
-	min-height: 100px;
-	margin-top: 20px;
-	border-top: 3px solid rgb(78, 202, 255);
+	/*border-top: 3px solid rgb(78, 202, 255);*/
+	display: table-row;
+	height: 1px;
 }
 
 footer p {
 	color:rgb(78, 202, 255);
 	text-align: center;
 	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/*sticky footer*/
+
+html, body {
+	margin: 0;
+	display:table;
+	height:100%;
+	width: 100%;
 }
 
 /* Media Queries */
@@ -294,7 +337,13 @@ footer p {
 	}
 
 	aside#hobby_sidebar {
-	margin-top: 0;
+		margin-top: 0;
+		margin-bottom: 25px;
 	}
+
+	aside#about_sidebar {
+		margin-bottom: 25px;
+	}
+
 }
 
